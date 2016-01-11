@@ -12,9 +12,9 @@ var del = require('del');
 
 //del removed or renamed files
 var delDest;
-gulp.task('del', function (cb) {
- return del(delDest,cb);
- });
+gulp.task('del', function(cb) {
+	return del(delDest, cb);
+});
 
 //sass
 gulp.task('sass', function() {

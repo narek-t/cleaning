@@ -1,13 +1,21 @@
 {
-  "name": "test",
+  "name": "my_blank_template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blank template for frontend developers, using sass, jade, gulp, autoprefixer and much more",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narek-t/blank-template.git"
+  },
+  "author": "Narek Tarverdyan narek.tarverdyan@bk.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/narek-t/blank-template/issues"
+  },
+  "homepage": "https://github.com/narek-t/blank-template#readme",
   "devDependencies": {
     "browser-sync": "^2.11.0",
     "del": "^2.2.0",
@@ -16,9 +24,9 @@
     "gulp-cache": "^0.4.1",
     "gulp-concat": "^2.6.0",
     "gulp-csso": "^1.0.1",
-    "gulp-imagemin": "^2.4.0",
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
     "gulp-uglify": "^1.5.1"
   }
