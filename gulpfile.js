@@ -8,17 +8,9 @@ var jade = require('gulp-jade');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
-var del = require('del');
-
-//del removed or renamed files
-var delDest;
-gulp.task('del', function(cb) {
-	return del(delDest, cb);
-});
 
 //sass
 gulp.task('sass', function() {
-	delDest = 'dist/css';
 	return gulp.src('src/scss/**/*.scss')
 		.pipe(plumber())
 		.pipe(sass())
@@ -31,7 +23,7 @@ gulp.task('sass', function() {
 			suffix: '.min'
 		}))
 		.pipe(autoprefixer({
-			browsers: ['last 5 versions'],
+			browsers: ['> 0%'],
 			cascade: false
 		}))
 		.pipe(csso())
@@ -48,9 +40,9 @@ gulp.task('browserSync', function() {
 		},
 	});
 });
+
 //jade
 gulp.task('jade', function() {
-	delDest = 'dist/*.html';
 	return gulp.src('src/templates/**/!(_)*.jade')
 		.pipe(plumber())
 		.pipe(jade({
@@ -61,9 +53,9 @@ gulp.task('jade', function() {
 			stream: true
 		}));
 });
+
 //scripts
 gulp.task('uglify', function() {
-	delDest = 'dist/js/*.js';
 	return gulp.src('src/scripts/**/*.js')
 		.pipe(plumber())
 		.pipe(gulp.dest('dist/js'))
@@ -79,7 +71,7 @@ gulp.task('uglify', function() {
 });
 
 gulp.task('watch', ['browserSync', 'sass', 'jade', 'uglify'], function() {
-	gulp.watch('src/scss/**/*.scss', ['del', 'sass']);
-	gulp.watch('src/templates/**/*.jade', ['del', 'jade']);
-	gulp.watch('src/scripts/**/*.js', ['del', 'uglify']);
+	gulp.watch('src/scss/**/*.scss', ['sass']);
+	gulp.watch('src/templates/**/*.jade', ['jade']);
+	gulp.watch('src/scripts/**/*.js', ['uglify']);
 });
