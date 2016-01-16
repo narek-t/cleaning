@@ -1,7 +1,196 @@
 extends _layout
 
 block body
-	.content
+	//begin .index-top
+	.index-top
+		.top-slider
+			ul.topslider
+				li(style="background-image: url(img/slide1.jpg)")
+					.container.cf
+						.slide-text
+							h3 Безупречная чистота
+							p Компания "Чистая репутация" позволит вашей квартире, дому или офису оставаться чистыми и радующими глаз. Специалисты нашей компании работают в сфере клининга уже много лет и знают об уборке все. 
+						.feedback-wrapper
+							.feedback-inner
+								p.title Обратная связь
+								form(action="")
+									input(type="text", placeholder="Ваше имя")
+									input(type="text", placeholder="Номер телефона / e-mail")
+									textarea(placeholder="Сообщение")
+									input.animatable(type="submit", value="отправить")
+				li(style="background-image: url(img/slide1.jpg)")
+					.container.cf
+						.slide-text
+							h3 Безупречная чистота
+							p Компания "Чистая репутация" позволит вашей квартире, дому или офису оставаться чистыми и радующими глаз. Специалисты нашей компании работают в сфере клининга уже много лет и знают об уборке все. 
+						.feedback-wrapper
+							.feedback-inner
+								p.title Обратная связь
+								form(action="")
+									input(type="text", placeholder="Ваше имя")
+									input(type="text", placeholder="Номер телефона / e-mail")
+									textarea(placeholder="Сообщение")
+									input.animatable(type="submit", value="отправить")
+				li(style="background-image: url(img/slide1.jpg)")
+					.container.cf
+						.slide-text
+							h3 Безупречная чистота
+							p Компания "Чистая репутация" позволит вашей квартире, дому или офису оставаться чистыми и радующими глаз. Специалисты нашей компании работают в сфере клининга уже много лет и знают об уборке все. 
+						.feedback-wrapper
+							.feedback-inner
+								p.title Обратная связь
+								form(action="")
+									input(type="text", placeholder="Ваше имя")
+									input(type="text", placeholder="Номер телефона / e-mail")
+									textarea(placeholder="Сообщение")
+									input.animatable(type="submit", value="отправить")
+	.index-top-text
+		.container
+			p Чистая репутация -  это комплекс факторов, которые формируют хорошие, доверительные отношения между потенциальным клиентом или деловым партнером и человеком, носителем репутации. Она формируется как на объективных аспектах, таких, как качество производимых товаров, услуг, а также профессиональные навыки, так и на субъективных.
+	//end .index-top
+	//begin .our-services
+	.our-services
+		.container.cf
+			h2.block-heading Наши услуги
+			.individual.services-item
+				p.title Физическим лицам
+				ul
+					li
+						img(src="img/services1.jpg", alt="")
+						p.description Уборка после ремонта
+					li
+						img(src="img/services2.jpg", alt="")
+						p.description Генеральная уборка
+					li
+						img(src="img/services3.jpg", alt="")
+						p.description Химчистка мебели
+			.entity.services-item
+				p.title Юридическим лицам
+				ul
+					li
+						img(src="img/services1.jpg", alt="")
+						p.description Уборка после ремонта
+					li
+						img(src="img/services2.jpg", alt="")
+						p.description Генеральная уборка
+					li
+						img(src="img/services3.jpg", alt="")
+						p.description Химчистка мебели
 
-block scripts
-	script(src="js/app.min.js")
+	//end .our-services
+	//begin about-us
+	.about-us
+		.container.cf
+			h2.block-heading о компании
+			img(src="img/about-img.png", alt="")
+			.about-us-description
+				p Компания "Чистая репутация" позволит вашей квартире, дому или офису оставаться чистыми и радующими глаз. <br><br>Специалисты нашей компании работают в сфере клининга уже много лет и знают об уборке все. Независимо от того насколько  большой объем необходимо выполнить,  наши мастера справятся.  <br><br>На данный момент в Санкт-Петербурге  и  Ленинградской области действует множество компаний представляющих услуги по уборке. Среди них есть достойные компании услугами которых Вы останетесь довольны.  <br><br>Компания "Чистая Репутация" из этого числа. Нам Важно, чтобы Вы  обращались к нам и становились нашими постоянными клиентами.   Независимо от того пользуетесь ли Вы нашими услугами как частное лицо, или представляете юридическое лицо, желаете ли Вы использовать наличный или безналичный расчет,  нужна ли Вам уборка утром или вечером (а может и в выходной день) мы всегда будем Вам рады.  <br><br><br>Позвоните и закажите услуги у нас.
+	//end about-us
+	//begin pluses
+	.pluses
+		.container.cf
+			h2.block-heading наши преимущества
+			ul.pluses__list
+				li
+					img(src="img/pluses1.png", alt="")
+					p.title Профессиональные уборщики
+				li
+					img(src="img/pluses2.png", alt="")
+					p.title качественные моющие среднства
+				li
+					img(src="img/pluses3.png", alt="")
+					p.title Лучшие цены в городе
+				li
+					img(src="img/pluses4.png", alt="")
+					p.title большой опыт работы
+				li
+					img(src="img/pluses5.png", alt="")
+					p.title гарантия выполненной чистки
+	//end pluses
+	//begin .reviews
+	.reviews
+		.container.cf
+			h2.block-heading Отзывы
+			.slider-wrapper
+				ul.bxslider
+					li
+						img(src="img/rev-img.png", alt="")
+						p.reviews__text “Клининг и своевременное техническое обслуживание – профилактика от постоянного ремонта. Полы в помещениях регулярно подвергаются износу и механическому воздействию (грязь, песок, мусор) и утрачивают первоначальный вид. При должном уходе и регулярной уборке срок службы напольного покрытия может быть продлён. Экономьте на ремонте.”
+						p.reviews__author Дмитрий Ковальский
+						p.reviews__role частный предприниматель
+					li
+						img(src="img/rev-img.png", alt="")
+						p.reviews__text “Клининг и своевременное техническое обслуживание – профилактика от постоянного ремонта. Полы в помещениях регулярно подвергаются износу и механическому воздействию (грязь, песок, мусор) и утрачивают первоначальный вид. При должном уходе и регулярной уборке срок службы напольного покрытия может быть продлён. Экономьте на ремонте.”
+						p.reviews__author Дмитрий Ковальский
+						p.reviews__role частный предприниматель
+	//end .reviews
+	//begin .season-offer
+	.season-offer.container.cf
+		h2.block-heading Сезонное предложение
+		img(src="img/season-img.jpg", alt="")
+		.season-offer_plot
+			p.title Чистка вашего двора от снега!
+			p.description Завалило снегом двор? Не можете сами справляться с бурными снегопадами? Мы вам поможем!<br><br>Здоровье – прежде всего. Качественно выполненная профессиональная уборка, это не только чистота на рабочем месте, но и свежий воздух в помещении, без вредных бактерий, которые витают в наших офисах. Согласитесь, в чистом, убранном кабинете ваши сотрудники реже болеют. <br><br>Стоимость эксплуатационных и клининговых услуг всегда рассчитывается индивидуально и зависит от сложности задачи, площади помещения, количества занятого персонала, использования спецтехники, периодичности уборки.
+			a.season-offer__more.animatable(href="#") Узнать подробнее
+	//end .season-offer
+	//begin .company-news
+	.company-news
+		.container.cf
+			h2.block-heading Новости компании
+			ul.company-news__list
+				li
+					.title-side.cf
+						.date-side
+							p.date-list 25
+							p.month-list ноя
+						.heading-side
+							a(href="#") Реальные истории наших Клиентов
+					p.company-news-list__plot Клиенты, которые доверяют нам свои домашние заботы на протяжении долгого времени, делятся своими впечатлениями о нашей компании.
+				li
+					.title-side.cf
+						.date-side
+							p.date-list 25
+							p.month-list ноя
+						.heading-side
+							a(href="#") Реальные истории наших Клиентов
+					p.company-news-list__plot Клиенты, которые доверяют нам свои домашние заботы на протяжении долгого времени, делятся своими впечатлениями о нашей компании.
+				li
+					.title-side.cf
+						.date-side
+							p.date-list 25
+							p.month-list ноя
+						.heading-side
+							a(href="#") Реальные истории наших Клиентов
+					p.company-news-list__plot Клиенты, которые доверяют нам свои домашние заботы на протяжении долгого времени, делятся своими впечатлениями о нашей компании.
+				li
+					.title-side.cf
+						.date-side
+							p.date-list 25
+							p.month-list ноя
+						.heading-side
+							a(href="#") Реальные истории наших Клиентов
+					p.company-news-list__plot Клиенты, которые доверяют нам свои домашние заботы на протяжении долгого времени, делятся своими впечатлениями о нашей компании.
+	//end .company-news
+	//begin map-area
+	.map-area
+		#map
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ro11bAVkntOEPKwePgUO5ohGg-fWdkU8&width=100%&height=515&lang=ru_RU&sourceType=constructor"></script>
+		.container
+			.map-area__contacts
+				ul
+					li.phone
+						a(href="tel:+7 (495) 978-55-45") +7 (495) <strong>978-55-45</strong>
+					li.email
+						p e-mail:
+							a(href="mailto:info@cl-r.ru") info@cl-r.ru
+					li.loc.cf
+						p г. Санкт-Петербург, ул. Пушкина 15а
+			.feedback-wrapper
+				.feedback-inner
+					p.title Обратная связь
+					form(action="")
+						input(type="text", placeholder="Ваше имя")
+						input(type="text", placeholder="Номер телефона / e-mail")
+						textarea(placeholder="Сообщение")
+						input.animatable(type="submit", value="отправить")
+	//end map-area

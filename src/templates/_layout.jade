@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 html(lang="ru")
-head
-	meta(charset="UTF-8")
-	meta(http-equiv="X-UA-Compatible", content="IE=edge")
-	link(rel="stylesheet", href="css/style.min.css")
-	title Document
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Exo+2:400,300italic,700,300&subset=latin,cyrillic")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=latin,cyrillic-ext,cyrillic")
+		link(rel="stylesheet", href="css/style.min.css")
+		title Document
 	
-body
-	include _header
+	body
+		.all-wrapper
+			include _header
 
-	block body
+			block body
 
-	include _footer
+		include _footer
 
-block externalScripts
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		block externalScripts
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 
-block scripts
-	script(src="js/app.min.js")
+		block scripts
+			script(src="js/app.min.js")
