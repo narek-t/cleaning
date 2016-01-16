@@ -101,7 +101,7 @@ h2.block-heading {
 			margin: 0;
 			padding: 0;
 			li {
-				display: inline-block;
+				float: left;
 				height: 50px;
 				&:hover, &.current-menu-item {
 					background: #f99703;
@@ -125,7 +125,7 @@ h2.block-heading {
 	.socials {
 		float: right;
 		text-align: center;
-		width: 320px;
+		width: 325px;
 		height: 50px;
 		background: #259bc9;
 		ul {
@@ -147,31 +147,8 @@ h2.block-heading {
 				a {
 					display: block;
 					height: 24px;
-				}
-				&.fb {
-					a {
-						background: url(../img/fb.png) center center no-repeat;
-					}
-				}
-				&.vk {
-					a {
-						background: url(../img/vk.png) center center no-repeat;
-					}
-				}
-				&.twit {
-					a {
-						background: url(../img/twit.png) center center no-repeat;
-					}
-				}
-				&.ok {
-					a {
-						background: url(../img/ok.png) center center no-repeat;
-					}
-				}
-				&.gplus {
-					a {
-						background: url(../img/gplus.png) center center no-repeat;
-					}
+					background-repeat: no-repeat;
+					background-position: center center;
 				}
 			}
 		}
